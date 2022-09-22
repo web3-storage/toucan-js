@@ -6,7 +6,6 @@
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "pretest": "prettier --check .",
     "prepare": "rollup -c",
     "prettier": "prettier --write .",
     "build": "rollup -c",
