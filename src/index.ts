@@ -568,7 +568,10 @@ export default class Toucan {
    * @param event
    * @param error
    */
-  private async reportException(event: Event, maybeError: unknown): Promise<Response> {
+  private async reportException(
+    event: Event,
+    maybeError: unknown
+  ): Promise<Response> {
     let error: Error;
 
     if (isError(maybeError)) {
@@ -591,16 +594,16 @@ export default class Toucan {
     }
 
     const stacktrace = await this.buildStackTrace(error);
-    
-    const values = event.exception?.values ?? []
+
+    const values = event.exception?.values ?? [];
     if (!event.exception?.values) {
-      event.exception = { values }
+      event.exception = { values };
     }
     // push cause on to the top
-    values.unshift({ type: error.name, value: error.message, stacktrace })
+    values.unshift({ type: error.name, value: error.message, stacktrace });
 
     if (error.cause) {
-      return this.reportException(event, error.cause)
+      return this.reportException(event, error.cause);
     } else {
       return this.postEvent(event);
     }

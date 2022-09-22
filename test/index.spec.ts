@@ -201,7 +201,7 @@ describe('Toucan', () => {
           try {
             throw new Error('original error');
           } catch (cause) {
-            throw new Error('outer error with cause', {cause})
+            throw new Error('outer error with cause', { cause });
           }
         } catch (e) {
           result = toucan.captureException(e);
