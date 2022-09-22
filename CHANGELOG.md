@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.7.1](https://github.com/web3-storage/toucan-js/compare/v2.7.0...v2.7.1) (2022-09-22)
+
+
+### Miscellaneous Chores
+
+* release 2.7.1 ([999fb77](https://github.com/web3-storage/toucan-js/commit/999fb77bbc49d2ac8746f3f4b0dba21052e20549))
+
 ## 2.7.0 (2022-09-22)
 
 
