@@ -1,3 +1,10 @@
+
+_Forked from https://github.com/robertcepa/toucan-js_
+
+_All credit and fixes should be directed there_
+
+---
+
 <p align="center">
   <img src="https://i.imgur.com/zHw4F3x.jpg" alt="Logo" height="300">
 </p>
