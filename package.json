@@ -1,6 +1,6 @@
 {
   "name": "@web3-storage/toucan-js",
-  "version": "2.6.1",
+  "version": "2.7.0",
   "description": "Cloudflare Workers client for Sentry (fork)",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
